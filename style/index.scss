@@ -15,7 +15,7 @@
 
 // 2
 
-$primaryColor: none;
+$primaryColor: black;
 $secondaryColor: none;
 $maxFont: 60px;
 $goldenRatio: 1.618;
@@ -47,3 +47,19 @@ header {
 
 // 5
 
+.project-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-card {
+    @include defaultStats(2);
+    width: 30vw;
+    height: 25vw;
+    background-color: $primaryColor;
+}
+.project-card:first-child {
+    width: 90vw;
+}

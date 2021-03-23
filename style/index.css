@@ -34,4 +34,32 @@ header {
   padding: .2em;
   font-size: 12.36094px;
 }
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-card {
+  margin: .2em;
+  padding: .2em;
+  font-size: 18.54141px;
+  width: 30vw;
+  height: 25vw;
+  background-color: black;
+}
+
+.project-card:first-child {
+  width: 90vw;
+}
 /*# sourceMappingURL=index.css.map */

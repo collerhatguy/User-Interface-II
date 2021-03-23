@@ -18,7 +18,7 @@
 // 2
 
 $primaryColor: black;
-$secondaryColor: none;
+$secondaryColor: brown;
 $maxFont: 60px;
 $goldenRatio: 1.618;
 // 3
@@ -40,14 +40,6 @@ header {
 
 .name-container {
     @include defaultStats(1);
-    a {
-        text-decoration: none;
-        @include defaultStats(3);
-        
-        &:hover {
-            animation: hover 500ms ease forwards;
-        }
-    }
 }
 
 .nav-container {
@@ -55,11 +47,18 @@ header {
     display: flex;
     width: max-content;
     justify-content: space-evenly;
+    a {
+        color: $secondaryColor;
+        @include defaultStats(1);
+        &:hover {
+            animation: hover 1000ms ease-in-out forwards;
+        }
+    }
 }
 // if the screen is a certain size than the text should be smaller
 @media only screen and (max-width: 700px) {
     .nav-container {
-        @include defaultStats(1);
+        @include defaultStats(2);
     }
 }
 // 5
@@ -108,7 +107,7 @@ footer {
         font-size: 100%;
     }
     to {
-        font-size: 160%;
+        font-size: 120%;
     }
 }
 :focus {

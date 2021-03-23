@@ -23,18 +23,6 @@ header {
   font-size: 37.08282px;
 }
 
-.name-container a {
-  text-decoration: none;
-  margin: .2em;
-  padding: .2em;
-  font-size: 12.36094px;
-}
-
-.name-container a:hover {
-  -webkit-animation: hover 500ms ease forwards;
-          animation: hover 500ms ease forwards;
-}
-
 .nav-container {
   margin: .2em;
   padding: .2em;
@@ -50,11 +38,23 @@ header {
           justify-content: space-evenly;
 }
 
+.nav-container a {
+  color: brown;
+  margin: .2em;
+  padding: .2em;
+  font-size: 37.08282px;
+}
+
+.nav-container a:hover {
+  -webkit-animation: hover 1000ms ease-in-out forwards;
+          animation: hover 1000ms ease-in-out forwards;
+}
+
 @media only screen and (max-width: 700px) {
   .nav-container {
     margin: .2em;
     padding: .2em;
-    font-size: 37.08282px;
+    font-size: 18.54141px;
   }
 }
 
@@ -121,7 +121,7 @@ footer button:hover {
     font-size: 100%;
   }
   to {
-    font-size: 160%;
+    font-size: 120%;
   }
 }
 
@@ -130,7 +130,7 @@ footer button:hover {
     font-size: 100%;
   }
   to {
-    font-size: 160%;
+    font-size: 120%;
   }
 }
 

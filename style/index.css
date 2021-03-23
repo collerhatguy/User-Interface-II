@@ -9,18 +9,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.nav-container {
-  margin: .2em;
-  padding: .2em;
-  font-size: 37.08282px;
 }
 
 .name-container {
@@ -33,6 +27,29 @@ header {
   margin: .2em;
   padding: .2em;
   font-size: 12.36094px;
+}
+
+.nav-container {
+  margin: .2em;
+  padding: .2em;
+  font-size: 37.08282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-container {
+    margin: .2em;
+    padding: .2em;
+    font-size: 37.08282px;
+  }
 }
 
 .project-container {
@@ -61,5 +78,57 @@ header {
 
 .project-card:first-child {
   width: 90vw;
+}
+
+footer {
+  width: 100vw;
+  height: 50px;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer button {
+  margin: .2em;
+  padding: .2em;
+  font-size: 18.54141px;
+  border-radius: 1000px;
+  width: 200px;
+}
+
+footer button:focus {
+  outline: none;
+  -webkit-animation: hover 300ms ease forwards;
+          animation: hover 300ms ease forwards;
+}
+
+footer button:hover {
+  -webkit-animation: hover 500ms ease forwards;
+          animation: hover 500ms ease forwards;
+}
+
+@-webkit-keyframes hover {
+  from {
+    font-size: 100%;
+  }
+  to {
+    font-size: 160%;
+  }
+}
+
+@keyframes hover {
+  from {
+    font-size: 100%;
+  }
+  to {
+    font-size: 160%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

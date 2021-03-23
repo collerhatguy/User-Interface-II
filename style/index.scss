@@ -1,0 +1,25 @@
+// table of Contents
+// 1. default setting
+// 2. variables 
+// 3. mixins 
+
+*, *::after, *::before {
+    display: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.nav-container {
+    margin: .2em;
+    padding: .2em;
+}
+.name-container {
+    margin: .2em;
+    padding: .2em;
+}

@@ -1,1 +1,29 @@
-/* Add CSS styling here */
+*, *::after, *::before {
+  display: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nav-container {
+  margin: .2em;
+  padding: .2em;
+}
+
+.name-container {
+  margin: .2em;
+  padding: .2em;
+}
+/*# sourceMappingURL=index.css.map */

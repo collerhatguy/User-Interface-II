@@ -41,7 +41,12 @@ header {
 .name-container {
     @include defaultStats(1);
     a {
+        text-decoration: none;
         @include defaultStats(3);
+        
+        &:hover {
+            animation: hover 500ms ease forwards;
+        }
     }
 }
 
@@ -89,10 +94,7 @@ footer {
         @include defaultStats(2);
         border-radius: 1000px;
         width: 200px;
-        &:focus {
-            outline: none;
-            animation: hover 300ms ease forwards;
-        }
+        transition-duration: 500ms;
         &:hover {
             animation: hover 500ms ease forwards;
         }
@@ -108,4 +110,8 @@ footer {
     to {
         font-size: 160%;
     }
+}
+:focus {
+    outline: none;
+    animation: hover 500ms ease forwards;
 }

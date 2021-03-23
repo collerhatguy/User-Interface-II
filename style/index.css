@@ -24,9 +24,15 @@ header {
 }
 
 .name-container a {
+  text-decoration: none;
   margin: .2em;
   padding: .2em;
   font-size: 12.36094px;
+}
+
+.name-container a:hover {
+  -webkit-animation: hover 500ms ease forwards;
+          animation: hover 500ms ease forwards;
 }
 
 .nav-container {
@@ -101,12 +107,8 @@ footer button {
   font-size: 18.54141px;
   border-radius: 1000px;
   width: 200px;
-}
-
-footer button:focus {
-  outline: none;
-  -webkit-animation: hover 300ms ease forwards;
-          animation: hover 300ms ease forwards;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 footer button:hover {
@@ -130,5 +132,11 @@ footer button:hover {
   to {
     font-size: 160%;
   }
+}
+
+:focus {
+  outline: none;
+  -webkit-animation: hover 500ms ease forwards;
+          animation: hover 500ms ease forwards;
 }
 /*# sourceMappingURL=index.css.map */

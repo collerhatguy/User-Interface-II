@@ -20,10 +20,18 @@ header {
 .nav-container {
   margin: .2em;
   padding: .2em;
+  font-size: 37.08282px;
 }
 
 .name-container {
   margin: .2em;
   padding: .2em;
+  font-size: 37.08282px;
+}
+
+.name-container a {
+  margin: .2em;
+  padding: .2em;
+  font-size: 12.36094px;
 }
 /*# sourceMappingURL=index.css.map */

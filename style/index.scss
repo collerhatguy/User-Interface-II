@@ -2,12 +2,32 @@
 // 1. default setting
 // 2. variables 
 // 3. mixins 
+// 4. nav bar 
+// 5. projects 
+
+// 1
 
 *, *::after, *::before {
     display: border-box;
     margin: 0px;
     padding: 0px;
 }
+
+// 2
+
+$primaryColor: none;
+$secondaryColor: none;
+$maxFont: 60px;
+$goldenRatio: 1.618;
+// 3
+
+@mixin defaultStats($size) {
+    margin: .2em;
+    padding: .2em;
+    font-size: $maxFont / ($goldenRatio * $size);
+}
+
+// 4
 
 header {
     display: flex;
@@ -16,10 +36,14 @@ header {
     align-items: baseline;
 }
 .nav-container {
-    margin: .2em;
-    padding: .2em;
+    @include defaultStats(1);
 }
 .name-container {
-    margin: .2em;
-    padding: .2em;
+    @include defaultStats(1);
+    a {
+        @include defaultStats(3);
+    }
 }
+
+// 5
+

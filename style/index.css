@@ -9,6 +9,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
+  height: 10%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -20,13 +21,13 @@ header {
 .name-container {
   margin: .2em;
   padding: .2em;
-  font-size: 37.08282px;
+  font-size: 16.18px;
 }
 
 .nav-container {
   margin: .2em;
   padding: .2em;
-  font-size: 37.08282px;
+  font-size: 16.18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,20 +43,12 @@ header {
   color: brown;
   margin: .2em;
   padding: .2em;
-  font-size: 37.08282px;
+  font-size: 16.18px;
 }
 
 .nav-container a:hover {
   -webkit-animation: hover 1000ms ease-in-out forwards;
           animation: hover 1000ms ease-in-out forwards;
-}
-
-@media only screen and (max-width: 700px) {
-  .nav-container {
-    margin: .2em;
-    padding: .2em;
-    font-size: 18.54141px;
-  }
 }
 
 .project-container {
@@ -76,7 +69,7 @@ header {
 .project-card {
   margin: .2em;
   padding: .2em;
-  font-size: 18.54141px;
+  font-size: 16.18px;
   width: 30vw;
   height: 25vw;
   background-color: black;
@@ -104,7 +97,6 @@ footer {
 footer button {
   margin: .2em;
   padding: .2em;
-  font-size: 18.54141px;
   border-radius: 1000px;
   width: 200px;
   -webkit-transition-duration: 500ms;
@@ -138,5 +130,25 @@ footer button:hover {
   outline: none;
   -webkit-animation: hover 500ms ease forwards;
           animation: hover 500ms ease forwards;
+}
+
+@media only screen and (max-width: 361) {
+  header {
+    font-size: 16.18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  header {
+    font-size: 809px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

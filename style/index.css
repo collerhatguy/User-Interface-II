@@ -16,18 +16,17 @@ header {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  font-size: 8.09px;
 }
 
 .name-container {
   margin: .2em;
   padding: .2em;
-  font-size: 16.18px;
 }
 
 .nav-container {
   margin: .2em;
   padding: .2em;
-  font-size: 16.18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +42,6 @@ header {
   color: brown;
   margin: .2em;
   padding: .2em;
-  font-size: 16.18px;
 }
 
 .nav-container a:hover {
@@ -148,7 +146,7 @@ footer button:hover {
 
 @media only screen and (max-width: 1367px) {
   header {
-    font-size: 809px;
+    font-size: 40.45px;
   }
 }
 /*# sourceMappingURL=index.css.map */
